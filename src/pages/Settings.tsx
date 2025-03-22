@@ -4,6 +4,11 @@ import { Layout } from '@/components/Layout';
 import { AutoTradeSettings } from '@/components/AutoTradeSettings';
 
 const Settings = () => {
+  // Menggunakan title khusus untuk aplikasi desktop
+  React.useEffect(() => {
+    document.title = 'Auto Profit Miner - Settings';
+  }, []);
+
   return (
     <Layout>
       <div className="space-y-6">
